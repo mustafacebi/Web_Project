@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deneme Tablosu</title>
+    <!-- . class ----- # id -->
+    <style>
+        .divOzellik {
+            width: 100%;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<!-- 
+    Visual Studio Code Kısayolları
+
+    1- OPTİON + SHİFT + F = Kodları düzenleme
+    2- COMMAND + OPTİON + aşağı ve yukarı ok = imleci yukarı veya aşağı büyütür
+    3- OPTİON + yukarı aşağı ok = satır kaydırmak için
+    4- yazıyı seçip COMMAND + D = aynı diğer yazıları'da seçip değiştirme ve ekleme yapmaya yarar
+    5- COMMAND + SHİFT + k = Satır silmek
+    6- COMMAND + ENTER = yeni satır eklemek (satırın neresinde olursan ol)
+    -->
+<!--  GENEL KÜLTÜR
+    1- hr : bir satır çizgi çizer
+    2- br : bir satır boşluk bırakır
+    3- strong : kalın yapar
+    4- b : strongla aynı görev
+    5- i : italicten gelir yazıyı yatar yapar
+    6- mark : üzerine bir çizgi çekmeye yarar
+    7- center : resim veya yazıyı ortalamak için kullanılır.
+    8- a : link vermek için kullanılır.
+    9- ol (ordinary list) , ul(unordinary list)
+    10- table : tablo
+    11- inline block mantığı
+    12- div etiketi : 
+
+    img(image) : resim eklemek için kullanılır
+    -->
+
+
+<body>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <h1>Mustafa Emin Çebi</h1>
+    <h2>Mustafa Emin Çebi</h2>
+    <hr>
+    <h3>Mustafa Emin Çebi</h3>
+    <br>
+    <h4>Mustafa Emin Çebi</h4>
+    <h5>Mustafa Emin Çebi</h5>
+    <h6>Mustafa Emin Çebi</h6>
+
+
+    <p><strong>Mustafa</strong></p>
+    <p><mark>Mustafa</mark></p>
+    <p><i>Mustafa</i></p>
+    <p><b>Mustafa</b></p>
+
+    <p style="font-weight: bold; color: red;">CSS örneği</p>
+
+    <center> <img src="/DenemeKlasoru/denemeimage.svg" alt="Resim bulunamadı" width="200">
+        <h2>Resmin Başlığı</h2>
+    </center>
+
+    <center>GUGLE için <a href="https://www.google.com" target="_blank">tıkla</a> </center>
+
+
+    <ol type="1">
+        <li>
+            İç Donanım Birimleri
+            <ol type="I">
+                <li>Anakart</li>
+                <li>İşlemci</li>
+                <li>Bellek</li>
+            </ol>
+        </li>
+
+
+        <li>
+            Dış Donanım Birimleri
+            <ol type="1">
+                <li>
+                    Monitör
+                    <ol type="a">
+                        <li>LCD</li>
+                        <li>LED</li>
+                    </ol>
+                </li>
+                <li>Klavye</li>
+                <li>Fare</li>
+            </ol>
+        </li>
+    </ol>
+
+
+    <table border="1">
+        <tr>
+            <th colspan="3">Kişisel Bilgiler</th>
+        </tr>
+
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+            <th>Yaş</th>
+        </tr>
+
+        <tr>
+            <td>Mustafa</td>
+            <td>Çebi</td>
+            <td>21</td>
+        </tr>
+    </table>
+
+
+    <table border="1">
+        <tr>
+            <th colspan="3">Product</th>
+        </tr>
+
+        <tr>
+            <th>No</th>
+            <th>P.Name</th>
+            <th>P.Count</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Pen</td>
+            <td rowspan="3">50</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Book</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Dust</td>
+        </tr>
+
+    </table>
+
+
+    <p>Mustafa</p>
+    <h2>İletişim Sayfası</h2>
+    <span>Telif hakları saklıdır.</span>
+    <span> -----> abc</span>
+
+
+
+
+
+    <div class="divOzellik">
+        <h3>Web Siteme Hoşgeldiniz</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <form>
+        <input type="text" placeholder="Kullanıcı Adı"> <br>
+        <input type="password" placeholder="Şifre"> <br>
+        <input type="email" placeholder="email"> <br>
+        kitap okumak <input type="checkbox" id="kitapCheckbox"> <br>
+        spor yapmak <input type="checkbox" name="" id="sporChexkbox"> <br> <br>
+        Kadın <input type="radio" name="cinsiyetRadio"> <br>
+        Erkek <input type="radio" name="cinsiyetRadio"> <br>
+        <input type="file"> <br> <br>
+        <textarea name="mesajInput" id="mesajAlani" cols="40" rows="10"></textarea> <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+    <form>
+        <table>
+            <tr>
+                <td> Adınız : </td>
+                <td> <input type="text"> </td>
+            </tr>
+            <tr>
+                <td>Soyadınız : </td>
+                <td> <input type="text"> </td>
+            </tr>
+            <tr>
+                <td> Email Adres : </td>
+                <td> <input type="email"> </td>
+            </tr>
+            <tr>
+                <td> Şifre : </td>
+                <td> <input type="password"> </td>
+            </tr>
+            <tr>
+                <td> Cinsiyet : </td>
+                <td>
+                    Erkek <input type="radio" name="cinsiyetRadio">
+                    Kadın <input type="radio" name="cinsiyetRadio">
+                </td>
+            </tr>
+
+            <tr>
+                <td>İletiniz : </td>
+                <td>
+                    <textarea name="Öylesine"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit">
+                    <input type="reset"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Mustafa Çebi</td>
+            </tr>
+
+        </table>
+    </form>
+
+
+
+</body>
+
+</html>
