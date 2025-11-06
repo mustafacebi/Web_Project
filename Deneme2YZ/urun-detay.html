@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erkek Çocuk Tişört  -  Dıgıl kids</title>
+    <title>Erkek Çocuk Tişört - Dıgıl kids</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,131 +14,71 @@
     <header>
         <div class="container">
             <a href="index.html" class="logo">Dıgıl kids</a>
-
-            <nav>
-                <ul>
-                    <li><a href="index.html">Ana Sayfa</a></li>
-                    <li><a href="urunler.html" class="active">Ürünler</a></li>
-                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                    <li><a href="iletisim.html">İletişim</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-icons">
-                <a href="sepet.html">Sepet (0)</a>
-            </div>
-        </div>
+            
+            <button class="menu-toggle" aria-label="Menüyü aç">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+            
+            <div class="nav-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li> 
+                        <li><a href="urunler.html" class="active">Ürünler</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </nav>
+    
+                <div class="header-icons">
+                    <a href="sepet.html">Sepet (<span id="cart-count">0</span>)</a>
+                </div>
+            </div> </div>
     </header>
 
     <main>
-    <section class="product-detail-section">
-        <div class="container">
-            <div class="product-detail-layout">
+        <section class="product-detail-section">
+            <div class="container">
+                <div class="product-detail-layout">
 
-                <div class="product-image-gallery">
-                    <img src="https://via.placeholder.com/500x700" alt="Erkek Çocuk Tişört" class="main-product-image">
+                    <div class="product-image-gallery">
+                        <img src="https://via.placeholder.com/500x700" alt="Erkek Çocuk Tişört"
+                            class="main-product-image">
 
-                    <div class="thumbnail-images">
-                        <img src="https://via.placeholder.com/100x120" alt="Tişört yandan görünüm">
-                        <img src="https://via.placeholder.com/100x120" alt="Tişört detay">
-                        <img src="https://via.placeholder.com/100x120" alt="Tişört model üzeri">
-                    </div>
-                </div>
-
-                <div class="product-info">
-                    <h1>Erkek Çocuk Tişört</h1>
-                    <p class="detail-price">199.99 TL</p>
-
-                    <p class="description">
-                        %100 pamuklu, yumuşacık kumaşı ile çocuğunuz gün boyu rahat etsin. 
-                        Ön yüzünde eğlenceli baskı bulunmaktadır. 
-                        30 derecede yıkanabilir.
-                    </p>
-
-                    <div class="product-options">
-                        <label for="beden">Beden:</label>
-                        <select name="beden" id="beden">
-                            <option value="XS">XS (3-4 Yaş)</option>
-                            <option value="S">S (5-6 Yaş)</option>
-                            <option value="M">M (7-8 Yaş)</option>
-                        </select>
+                        <div class="thumbnail-images">
+                            <img src="https://via.placeholder.com/100x120" alt="Tişört yandan görünüm">
+                            <img src="https://via.placeholder.com/100x120" alt="Tişört detay">
+                            <img src="https://via.placeholder.com/100x120" alt="Tişört model üzeri">
+                        </div>
                     </div>
 
-                    <a href="#" class="btn btn-add-to-cart">Sepete Ekle</a>
-                </div>
+                    <div class="product-info">
+                        <h1>Erkek Çocuk Tişört</h1>
+                        <p class="detail-price">199.99 TL</p>
 
-            </div>
-        </div>
-    </section>
-</main>
+                        <p class="description">
+                            %100 pamuklu, yumuşacık kumaşı ile çocuğunuz gün boyu rahat etsin.
+                            Ön yüzünde eğlenceli baskı bulunmaktadır.
+                            30 derecede yıkanabilir.
+                        </p>
 
-    <section class="page-header">
-        <div class="container">
-            <h1>Tüm Ürünler</h1>
-            <p>En yeni koleksiyonları keşfedin.</p>
-        </div>
-    </section>
+                        <div class="product-options">
+                            <label for="beden">Beden:</label>
+                            <select name="beden" id="beden">
+                                <option value="XS">XS (3-4 Yaş)</option>
+                                <option value="S">S (5-6 Yaş)</option>
+                                <option value="M">M (7-8 Yaş)</option>
+                            </select>
+                        </div>
 
-    <section class="product-list-section">
-        <div class="container">
+                        <a href="#" class="btn btn-add-to-cart">Sepete Ekle</a>
+                    </div>
 
-            <aside class="filters">
-                <h3>Kategoriler</h3>
-                <ul>
-                    <li><a href="#">Tişörtler</a></li>
-                    <li><a href="#">Elbiseler</a></li>
-                    <li><a href="#">Pantolonlar</a></li>
-                    <li><a href="#">Zıbınlar</a></li>
-                </ul>
-
-                <h3>Filtrele</h3>
-                <p>Filtre özellikleri buraya gelecek.</p>
-            </aside>
-
-            <div class="product-list-grid">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x400" alt="Ürün">
-                    <h3>Ürün Adı 1</h3>
-                    <p class="price">299.99 TL</p>
-                    <a href="urun-detay.html" class="btn btn-secondary">İncele</a>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x400" alt="Ürün">
-                    <h3>Ürün Adı 2</h3>
-                    <p class="price">199.99 TL</p>
-                    <a href="urun-detay.html" class="btn btn-secondary">İncele</a>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x400" alt="Ürün">
-                    <h3>Ürün Adı 3</h3>
-                    <p class="price">499.99 TL</p>
-                    <a href="urun-detay.html" class="btn btn-secondary">İncele</a>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x400" alt="Ürün">
-                    <h3>Ürün Adı 4</h3>
-                    <p class="price">249.99 TL</p>
-                    <a href="urun-detay.html" class="btn btn-secondary">İncele</a>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x400" alt="Ürün">
-                    <h3>Ürün Adı 5</h3>
-                    <p class="price">349.99 TL</p>
-                    <a href="urun-detay.html" class="btn btn-secondary">İncele</a>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x400" alt="Ürün">
-                    <h3>Ürün Adı 6</h3>
-                    <p class="price">159.99 TL</p>
-                    <a href="urun-detay.html" class="btn btn-secondary">İncele</a>
                 </div>
             </div>
-
-        </div>
-    </section>
-</main>
+        </section>
     </main>
-
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -174,12 +114,8 @@
             </div>
         </div>
     </footer>
+
     <script src="app.js"></script>
-</body>
-
-</html>
-
-<script src="app.js"></script>
 </body>
 
 </html>

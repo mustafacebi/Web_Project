@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dıgıl kids - Ana Sayfa</title>
+    <title>Sepetim - Dıgıl kids</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,7 +24,7 @@
             <div class="nav-wrapper">
                 <nav>
                     <ul>
-                        <li><a href="index.html" class="active">Ana Sayfa</a></li> 
+                        <li><a href="index.html">Ana Sayfa</a></li> 
                         <li><a href="urunler.html">Ürünler</a></li>
                         <li><a href="hakkimizda.html">Hakkımızda</a></li>
                         <li><a href="iletisim.html">İletişim</a></li>
@@ -38,38 +38,45 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Yeni Sezon Çocuk Giyim</h1>
-                <p>En trend ve en rahat kıyafetler Dıgıl kids'te!</p>
-                <a href="urunler.html" class="btn">Hemen İncele</a>
+        <section class="page-header">
+            <div class="container">
+                <h1>Sepetim</h1>
+                <p>Sepetinizdeki ürünleri kontrol edin.</p>
             </div>
         </section>
-        <section class="featured-products">
+
+        <section class="cart-section">
             <div class="container">
-                <h2>Öne Çıkan Ürünler</h2>
+                <div class="cart-layout">
 
-                <div class="product-grid">
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/300x400" alt="Çocuk Tişört">
-                        <h3>Erkek Çocuk Tişört</h3>
-                        <p class="price">199.99 TL</p>
-                        <a href="urun-detay.html" class="btn btn-secondary">İncele</a>
+                    <div class="cart-items-list">
+                        <h2>Ürünleriniz</h2>
+
+                        <div id="cart-items-container">
+                            <p id="empty-cart-message">Sepetinizde henüz ürün bulunmuyor.</p>
+                        </div>
                     </div>
 
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/300x400" alt="Kız Çocuk Elbise">
-                        <h3>Kız Çocuk Elbise</h3>
-                        <p class="price">349.99 TL</p>
-                        <a href="urun-detay.html" class="btn btn-secondary">İncele</a>
-                    </div>
+                    <aside class="cart-summary">
+                        <h3>Sipariş Özeti</h3>
 
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/300x400" alt="Bebek Zıbın">
-                        <h3>Unisex Bebek Zıbın</h3>
-                        <p class="price">249.99 TL</p>
-                        <a href="urun-detay.html" class="btn btn-secondary">İncele</a>
-                    </div>
+                        <div class="summary-row">
+                            <span>Ara Toplam:</span>
+                            <span id="summary-subtotal">0.00 TL</span>
+                        </div>
+
+                        <div class="summary-row">
+                            <span>Kargo:</span>
+                            <span>29.99 TL</span>
+                        </div>
+
+                        <div class="summary-row total">
+                            <span>Genel Toplam:</span>
+                            <span id="summary-total">29.99 TL</span>
+                        </div>
+
+                        <a href="#" class="btn btn-add-to-cart">Ödemeye Geç</a>
+                    </aside>
 
                 </div>
             </div>
@@ -111,12 +118,8 @@
             </div>
         </div>
     </footer>
+
     <script src="app.js"></script>
-</body>
-
-</html>
-
-<script src="app.js"></script>
 </body>
 
 </html>

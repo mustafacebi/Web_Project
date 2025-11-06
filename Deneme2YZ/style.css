@@ -7,64 +7,88 @@
 
 /* --- 2. Genel Sayfa Stilleri --- */
 body {
-    font-family: Arial, sans-serif; /* Daha modern fontlar da seçebiliriz */
+    font-family: Arial, sans-serif;
+    /* Daha modern fontlar da seçebiliriz */
     line-height: 1.6;
-    background-color: #f4f4f4; /* Sayfanın ana arka plan rengi (çok açık gri) */
-    color: #333; /* Varsayılan metin rengi (koyu gri) */
+    background-color: #f4f4f4;
+    /* Sayfanın ana arka plan rengi (çok açık gri) */
+    color: #333;
+    /* Varsayılan metin rengi (koyu gri) */
 }
 
 /* --- 3. Container Stili --- */
 .container {
-    width: 90%; /* İçerik alanının genişliği */
-    max-width: 1100px; /* Maksimum 1100px olsun, daha fazla büyümesin */
-    margin: 0 auto; /* Sol ve sağdan otomatik boşluk = Ortalamak için */
+    width: 90%;
+    /* İçerik alanının genişliği */
+    max-width: 1100px;
+    /* Maksimum 1100px olsun, daha fazla büyümesin */
+    margin: 0 auto;
+    /* Sol ve sağdan otomatik boşluk = Ortalamak için */
 }
 
 /* --- 4. Header / Navigasyon --- */
 header {
-    background-color: #ffffff; /* Header'ın arka planı beyaz olsun */
-    padding: 20px 0; /* Üstten ve alttan 20px, sağdan ve soldan 0px iç boşluk */
-    border-bottom: 1px solid #ddd; /* Header'ın altına ince bir çizgi */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Hafif bir gölge */
+    background-color: #ffffff;
+    /* Header'ın arka planı beyaz olsun */
+    padding: 20px 0;
+    /* Üstten ve alttan 20px, sağdan ve soldan 0px iç boşluk */
+    border-bottom: 1px solid #ddd;
+    /* Header'ın altına ince bir çizgi */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Hafif bir gölge */
 }
 
 /* Header'ın içindeki .container'a özel kural */
 header .container {
-    display: flex; /* Flexbox'ı etkinleştir! */
-    justify-content: space-between; /* Öğeler arasına boşluk koy (logo sola, diğerleri sağa) */
-    align-items: center; /* Öğeleri dikeyde ortala */
+    display: flex;
+    /* Flexbox'ı etkinleştir! */
+    justify-content: space-between;
+    /* Öğeler arasına boşluk koy (logo sola, diğerleri sağa) */
+    align-items: center;
+    /* Öğeleri dikeyde ortala */
 }
 
 .logo {
-    font-size: 24px; /* Logonun yazı boyutunu büyütelim */
-    font-weight: bold; /* Kalın yapalım */
-    color: #555; /* Logonun rengi */
-    text-decoration: none; /* Altındaki çizgiyi kaldır */
+    font-size: 24px;
+    /* Logonun yazı boyutunu büyütelim */
+    font-weight: bold;
+    /* Kalın yapalım */
+    color: #555;
+    /* Logonun rengi */
+    text-decoration: none;
+    /* Altındaki çizgiyi kaldır */
 }
 
 nav ul {
-    list-style: none; /* Menüdeki liste noktalarını (bullet points) kaldır */
+    list-style: none;
+    /* Menüdeki liste noktalarını (bullet points) kaldır */
 }
 
 nav ul li {
-    display: inline-block; /* Liste elemanlarını yan yana getir */
-    margin-left: 20px; /* Her menü öğesi arasına soldan 20px boşluk koy */
+    display: inline-block;
+    /* Liste elemanlarını yan yana getir */
+    margin-left: 20px;
+    /* Her menü öğesi arasına soldan 20px boşluk koy */
 }
 
 nav ul li a {
-    text-decoration: none; /* Linklerin altındaki çizgiyi kaldır */
-    color: #555; /* Menü linklerinin rengi */
+    text-decoration: none;
+    /* Linklerin altındaki çizgiyi kaldır */
+    color: #555;
+    /* Menü linklerinin rengi */
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #007bff; /* Fare üzerine gelince link rengi değişsin (Örn: Mavi) */
+    color: #007bff;
+    /* Fare üzerine gelince link rengi değişsin (Örn: Mavi) */
 }
 
 .header-icons a {
     text-decoration: none;
     color: #555;
-    margin-left: 20px; /* Sepet ikonunu menüden biraz ayır */
+    margin-left: 20px;
+    /* Sepet ikonunu menüden biraz ayır */
     font-weight: bold;
 }
 
@@ -75,64 +99,85 @@ nav ul li a:hover {
       Elinizde bir fotoğraf olduğunda 'background-color' satırını silip
       'background-image: url('resmin-adresi.jpg');' satırını ekleyebilirsiniz.
     */
-    background-color: #e6f7ff; /* Çocuk giyimine uygun açık, yumuşak bir mavi */
-    background-size: cover; /* Resmi olsaydı kaplaması için */
-    background-position: center; /* Resmi olsaydı ortalaması için */
+    background-color: #e6f7ff;
+    /* Çocuk giyimine uygun açık, yumuşak bir mavi */
+    background-size: cover;
+    /* Resmi olsaydı kaplaması için */
+    background-position: center;
+    /* Resmi olsaydı ortalaması için */
 
-    min-height: 60vh; /* Ekran yüksekliğinin en az %60'ı kadar yer kaplasın */
-    color: #333; /* Metin rengi */
+    min-height: 60vh;
+    /* Ekran yüksekliğinin en az %60'ı kadar yer kaplasın */
+    color: #333;
+    /* Metin rengi */
 
     /* İçeriği dikey ve yatayda mükemmel ortalamak için Flexbox */
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     /* Metnin kendisini de ortala (mobil için önemli) */
     text-align: center;
-    
-    padding: 20px; /* Kenarlardan iç boşluk */
+
+    padding: 20px;
+    /* Kenarlardan iç boşluk */
 }
 
 .hero-content h1 {
-    font-size: 48px; /* Ana başlık büyük olsun */
-    margin-bottom: 15px; /* Altındaki metinle arasına boşluk */
+    font-size: 48px;
+    /* Ana başlık büyük olsun */
+    margin-bottom: 15px;
+    /* Altındaki metinle arasına boşluk */
     color: #222;
 }
 
 .hero-content p {
-    font-size: 20px; /* Slogan metni */
-    margin-bottom: 30px; /* Butonla arasına boşluk */
+    font-size: 20px;
+    /* Slogan metni */
+    margin-bottom: 30px;
+    /* Butonla arasına boşluk */
 }
 
 /* --- 6. Genel Buton Stili (Bu stili sitedeki tüm butonlar için kullanabiliriz) --- */
 .btn {
-    display: inline-block; /* Satır içinde bir blok gibi davran */
-    background-color: #007bff; /* Parlak bir mavi (ana eylem rengi) */
-    color: #ffffff; /* Metin rengi beyaz */
-    padding: 12px 24px; /* Butonun iç boşluğu (daha tok görünür) */
-    text-decoration: none; /* Link alt çizgisini kaldır */
-    font-weight: bold; /* Kalın yazı */
-    border-radius: 5px; /* Kenarları hafifçe yuvarlat */
-    
+    display: inline-block;
+    /* Satır içinde bir blok gibi davran */
+    background-color: #007bff;
+    /* Parlak bir mavi (ana eylem rengi) */
+    color: #ffffff;
+    /* Metin rengi beyaz */
+    padding: 12px 24px;
+    /* Butonun iç boşluğu (daha tok görünür) */
+    text-decoration: none;
+    /* Link alt çizgisini kaldır */
+    font-weight: bold;
+    /* Kalın yazı */
+    border-radius: 5px;
+    /* Kenarları hafifçe yuvarlat */
+
     /* Fare üzerine gelince yumuşak bir geçiş efekti */
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #0056b3; /* Fare üzerine gelince renk koyulaşsın */
+    background-color: #0056b3;
+    /* Fare üzerine gelince renk koyulaşsın */
 }
 
 /* --- 7. Öne Çıkan Ürünler Bölümü --- */
 .featured-products {
-    padding: 60px 0; /* Bölümün üstünden ve altından 60px iç boşluk */
+    padding: 60px 0;
+    /* Bölümün üstünden ve altından 60px iç boşluk */
     /* Arka planı, ana body renginden (#f4f4f4) ayırmak için beyaz yapabiliriz */
-    background-color: #ffffff; 
+    background-color: #ffffff;
 }
 
 .featured-products h2 {
-    text-align: center; /* "Öne Çıkan Ürünler" başlığını ortala */
+    text-align: center;
+    /* "Öne Çıkan Ürünler" başlığını ortala */
     font-size: 32px;
-    margin-bottom: 40px; /* Başlık ile kartlar arasına boşluk koy */
+    margin-bottom: 40px;
+    /* Başlık ile kartlar arasına boşluk koy */
 }
 
 /* Ürün Kartlarını Yan Yana Dizmek İçin GRID Kullanımı */
@@ -145,47 +190,59 @@ nav ul li a:hover {
       Bu, tam otomatik responsive (duyarlı) bir grid sağlar.
     */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    
-    gap: 30px; /* Kartların hem yatayda hem dikeyde aralarındaki boşluk */
+
+    gap: 30px;
+    /* Kartların hem yatayda hem dikeyde aralarındaki boşluk */
 }
 
 /* --- 8. Ürün Kartı Stili --- */
 .product-card {
     background-color: #ffffff;
-    border: 1px solid #eee; /* İnce bir kenarlık */
-    border-radius: 8px; /* Kenarları yuvarlat */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Hafif bir gölge efekti */
-    
+    border: 1px solid #eee;
+    /* İnce bir kenarlık */
+    border-radius: 8px;
+    /* Kenarları yuvarlat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* Hafif bir gölge efekti */
+
     /* İçeriğin kartın dışına taşmasını engelle (resim için önemli) */
-    overflow: hidden; 
-    
-    text-align: center; /* Kart içindeki metinler ortalansın */
-    
+    overflow: hidden;
+
+    text-align: center;
+    /* Kart içindeki metinler ortalansın */
+
     /* Fare üzerine gelince hafifçe yukarı kalkma efekti */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-    transform: translateY(-5px); /* 5px yukarı kaydır */
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* Gölgeyi belirginleştir */
+    transform: translateY(-5px);
+    /* 5px yukarı kaydır */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    /* Gölgeyi belirginleştir */
 }
 
 .product-card img {
-    width: 100%; /* Resim, kartın genişliğine tam sığsın */
-    height: auto; /* Yüksekliği otomatik ayarla (oranı koru) */
-    display: block; /* Resimlerin altındaki istenmeyen boşluğu kaldırır */
+    width: 100%;
+    /* Resim, kartın genişliğine tam sığsın */
+    height: auto;
+    /* Yüksekliği otomatik ayarla (oranı koru) */
+    display: block;
+    /* Resimlerin altındaki istenmeyen boşluğu kaldırır */
 }
 
 .product-card h3 {
     font-size: 18px;
-    margin: 15px 0 10px 0; /* Üst(15) Sağ(0) Alt(10) Sol(0) boşluk */
+    margin: 15px 0 10px 0;
+    /* Üst(15) Sağ(0) Alt(10) Sol(0) boşluk */
     color: #444;
 }
 
 .product-card .price {
     font-size: 16px;
     font-weight: bold;
-    color: #007bff; /* Fiyatı, ana buton rengiyle aynı (mavi) yapalım */
+    color: #007bff;
+    /* Fiyatı, ana buton rengiyle aynı (mavi) yapalım */
     margin-bottom: 15px;
 }
 
@@ -193,19 +250,25 @@ nav ul li a:hover {
   "İncele" butonu daha az dikkat çekici (ikincil) olsun.
 */
 .btn-secondary {
-    background-color: #6c757d; /* Gri bir renk */
-    margin-bottom: 20px; /* Butonun kartın alt kenarına yapışmaması için */
+    background-color: #6c757d;
+    /* Gri bir renk */
+    margin-bottom: 20px;
+    /* Butonun kartın alt kenarına yapışmaması için */
 }
 
 .btn-secondary:hover {
-    background-color: #5a6268; /* Fare üzerine gelince koyu gri */
+    background-color: #5a6268;
+    /* Fare üzerine gelince koyu gri */
 }
 
 /* --- 9. Footer Bölümü --- */
 footer {
-    background-color: #333; /* Koyu bir arka plan (koyu gri/siyah) */
-    color: #f4f4f4; /* Üzerindeki metinler açık renk (açık gri) */
-    padding-top: 50px; /* Sütunların üstünden boşluk */
+    background-color: #333;
+    /* Koyu bir arka plan (koyu gri/siyah) */
+    color: #f4f4f4;
+    /* Üzerindeki metinler açık renk (açık gri) */
+    padding-top: 50px;
+    /* Sütunların üstünden boşluk */
 }
 
 .footer-grid {
@@ -214,58 +277,73 @@ footer {
        Sığdığı kadar sütun koy, sütunlar en az 200px olsun.
     */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px; /* Sütunlar arası boşluk */
+    gap: 30px;
+    /* Sütunlar arası boşluk */
 }
 
 .footer-col h3 {
     font-size: 18px;
     margin-bottom: 15px;
-    color: #ffffff; /* Başlıklar tam beyaz olsun */
+    color: #ffffff;
+    /* Başlıklar tam beyaz olsun */
 }
 
 .footer-col p {
-    color: #ccc; /* Açıklama metni biraz daha sönük bir renk */
+    color: #ccc;
+    /* Açıklama metni biraz daha sönük bir renk */
     line-height: 1.7;
 }
 
 .footer-col ul {
-    list-style: none; /* Liste noktalarını kaldır */
+    list-style: none;
+    /* Liste noktalarını kaldır */
 }
 
 .footer-col ul li {
-    margin-bottom: 10px; /* Linkler arası dikey boşluk */
+    margin-bottom: 10px;
+    /* Linkler arası dikey boşluk */
 }
 
 .footer-col ul li a,
 .social-links a {
     text-decoration: none;
-    color: #ccc; /* Linklerin varsayılan rengi */
-    transition: color 0.3s ease; /* Yumuşak renk geçişi */
+    color: #ccc;
+    /* Linklerin varsayılan rengi */
+    transition: color 0.3s ease;
+    /* Yumuşak renk geçişi */
 }
 
 .footer-col ul li a:hover,
 .social-links a:hover {
-    color: #007bff; /* Fare üzerine gelince ana mavi rengimiz */
+    color: #007bff;
+    /* Fare üzerine gelince ana mavi rengimiz */
 }
 
 .social-links a {
-    display: block; /* Sosyal medya linkleri alt alta dursun */
+    display: block;
+    /* Sosyal medya linkleri alt alta dursun */
     margin-bottom: 10px;
 }
 
 /* En alttaki telif hakkı çubuğu */
 .footer-bottom {
-    text-align: center; /* Metni ortala */
-    padding: 25px 0; /* Üstten ve alttan boşluk */
-    margin-top: 30px; /* Üstteki sütunlardan ayırmak için boşluk */
-    border-top: 1px solid #555; /* Ayırıcı çizgi */
-    color: #aaa; /* Daha sönük bir telif hakkı metni */
+    text-align: center;
+    /* Metni ortala */
+    padding: 25px 0;
+    /* Üstten ve alttan boşluk */
+    margin-top: 30px;
+    /* Üstteki sütunlardan ayırmak için boşluk */
+    border-top: 1px solid #555;
+    /* Ayırıcı çizgi */
+    color: #aaa;
+    /* Daha sönük bir telif hakkı metni */
     font-size: 14px;
 }
 
 /* --- 10. Aktif Menü Linki Stili --- */
 nav ul li a.active {
-    color: #007bff; /* Ana mavi rengimiz */
+    color: #007bff;
+    /* Ana mavi rengimiz */
     /* İsteğe bağlı: Altına bir çizgi de ekleyebiliriz */
     /* border-bottom: 2px solid #007bff; */
 }
@@ -273,7 +351,8 @@ nav ul li a.active {
 /* --- 11. Genel Sayfa Başlığı (Page Header) --- */
 /* (Hero'ya benzer ama daha küçük bir karşılama alanı) */
 .page-header {
-    background-color: #f4f4f4; /* Açık gri arka plan */
+    background-color: #f4f4f4;
+    /* Açık gri arka plan */
     padding: 40px 0;
     text-align: center;
     border-bottom: 1px solid #ddd;
@@ -289,7 +368,8 @@ nav ul li a.active {
     /* Bu sefer Flexbox kullanarak 
        solda filtre (sidebar), sağda ürün gridi oluşturacağız */
     display: flex;
-    gap: 30px; /* Filtre alanı ile ürünler arasına boşluk */
+    gap: 30px;
+    /* Filtre alanı ile ürünler arasına boşluk */
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -297,13 +377,13 @@ nav ul li a.active {
 /* Filtreleme Sütunu (Sidebar) */
 .filters {
     /* Flexbox içinde 1 birim yer kaplasın (genellikle %25-%30) */
-    flex: 1; 
+    flex: 1;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     /* Yüksekliği ürün listesiyle aynı hizada olsun (isteğe bağlı) */
-    align-self: flex-start; 
+    align-self: flex-start;
 }
 
 .filters h3 {
@@ -335,13 +415,15 @@ nav ul li a.active {
 /* Ürün Listesi Grid Alanı */
 .product-list-grid {
     /* Flexbox içinde 3 birim yer kaplasın (genellikle %70-%75) */
-    flex: 3; 
+    flex: 3;
 
     /* Ana sayfada kullandığımız ürün gridi ile aynı stil */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px; /* Kart arası boşlukları biraz azalttık */
+    gap: 20px;
+    /* Kart arası boşlukları biraz azalttık */
 }
+
 /* NOT: .product-card için ekstra CSS yazmamıza gerek yok, 
    çünkü onu zaten ana sayfa için yazmıştık ve stilleri buradan alacak! 
    İşte CSS'in gücü!
@@ -350,18 +432,21 @@ nav ul li a.active {
 /* --- 13. Ürün Detay Sayfası --- */
 .product-detail-section {
     padding: 60px 0;
-    background-color: #ffffff; /* Ana sayfadaki ürünler gibi beyaz arka plan */
+    background-color: #ffffff;
+    /* Ana sayfadaki ürünler gibi beyaz arka plan */
 }
 
 /* Flexbox ile sol-sağ sütunlu düzen */
 .product-detail-layout {
     display: flex;
-    gap: 40px; /* Resim alanı ile bilgi alanı arası boşluk */
+    gap: 40px;
+    /* Resim alanı ile bilgi alanı arası boşluk */
 }
 
 /* Sütun 1: Resim Galerisi */
 .product-image-gallery {
-    flex: 2; /* 2 birim yer kapla (daha geniş) */
+    flex: 2;
+    /* 2 birim yer kapla (daha geniş) */
     /* Gelecekte JavaScript ile tıklandığında değişecek resimler için */
 }
 
@@ -372,8 +457,10 @@ nav ul li a.active {
 }
 
 .thumbnail-images {
-    display: flex; /* Küçük resimleri yan yana diz */
-    gap: 10px; /* Aralarına boşluk */
+    display: flex;
+    /* Küçük resimleri yan yana diz */
+    gap: 10px;
+    /* Aralarına boşluk */
     margin-top: 15px;
 }
 
@@ -382,17 +469,20 @@ nav ul li a.active {
     height: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
-    cursor: pointer; /* Tıklanabilir olduğunu belirt */
+    cursor: pointer;
+    /* Tıklanabilir olduğunu belirt */
     transition: border-color 0.3s ease;
 }
 
 .thumbnail-images img:hover {
-    border-color: #007bff; /* Fare gelince kenarlık mavi olsun */
+    border-color: #007bff;
+    /* Fare gelince kenarlık mavi olsun */
 }
 
 /* Sütun 2: Ürün Bilgileri */
 .product-info {
-    flex: 1; /* 1 birim yer kapla (daha dar) */
+    flex: 1;
+    /* 1 birim yer kapla (daha dar) */
 }
 
 .product-info h1 {
@@ -404,7 +494,8 @@ nav ul li a.active {
 .detail-price {
     font-size: 28px;
     font-weight: bold;
-    color: #007bff; /* Fiyatı belirgin yap */
+    color: #007bff;
+    /* Fiyatı belirgin yap */
     margin-bottom: 20px;
 }
 
@@ -441,32 +532,39 @@ nav ul li a.active {
     */
     /* HTML'de class'ı "btn" olarak güncelleyelim (daha basit) */
     /* Veya CSS'de .btn-add-to-cart'a özel stil verelim */
-    
-    background-color: #28a745; /* Yeşil (Sepete Ekle için yaygın renk) */
+
+    background-color: #28a745;
+    /* Yeşil (Sepete Ekle için yaygın renk) */
     color: #ffffff;
     font-size: 18px;
-    padding: 15px 30px; /* Daha büyük, dikkat çekici buton */
-    width: 100%; /* Sütun genişliğini kaplasın */
+    padding: 15px 30px;
+    /* Daha büyük, dikkat çekici buton */
+    width: 100%;
+    /* Sütun genişliğini kaplasın */
     text-align: center;
     transition: background-color 0.3s ease;
 }
 
 .btn-add-to-cart:hover {
-    background-color: #218838; /* Koyu yeşil */
+    background-color: #218838;
+    /* Koyu yeşil */
 }
 
 /* --- 14. Hakkımızda Sayfası --- */
 .about-section {
     padding: 60px 0;
-    background-color: #ffffff; /* Beyaz arka plan */
+    background-color: #ffffff;
+    /* Beyaz arka plan */
 }
 
 .about-content {
     /* Metnin çok genişleyip okunmasını zorlaştırmamak için 
        içeriği ortada daha dar bir alana alıyoruz */
     max-width: 800px;
-    margin: 0 auto; /* Ortala */
-    line-height: 1.8; /* Daha okunaklı metin için satır yüksekliği */
+    margin: 0 auto;
+    /* Ortala */
+    line-height: 1.8;
+    /* Daha okunaklı metin için satır yüksekliği */
 }
 
 .about-content h2 {
@@ -478,7 +576,8 @@ nav ul li a.active {
 .about-content h3 {
     font-size: 22px;
     color: #444;
-    margin-top: 30px; /* Bir sonraki alt başlıkla arayı aç */
+    margin-top: 30px;
+    /* Bir sonraki alt başlıkla arayı aç */
     margin-bottom: 10px;
 }
 
@@ -508,7 +607,8 @@ nav ul li a.active {
     /* İki sütunlu bir grid oluşturalım. 
        Boşluğu eşit paylaşsınlar (1fr 1fr) */
     grid-template-columns: 1fr 1fr;
-    gap: 40px; /* İki sütun arası boşluk */
+    gap: 40px;
+    /* İki sütun arası boşluk */
 }
 
 /* Sol Sütun: Bilgiler */
@@ -542,7 +642,8 @@ nav ul li a.active {
 }
 
 .form-group label {
-    display: block; /* Etiketler inputların üstünde dursun */
+    display: block;
+    /* Etiketler inputların üstünde dursun */
     margin-bottom: 8px;
     font-weight: bold;
     color: #555;
@@ -550,24 +651,271 @@ nav ul li a.active {
 
 .form-group input,
 .form-group textarea {
-    width: 100%; /* Kapsayıcısını (formu) tam doldursun */
+    width: 100%;
+    /* Kapsayıcısını (formu) tam doldursun */
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    font-family: Arial, sans-serif; /* body'den stili alsın */
-    
+    font-family: Arial, sans-serif;
+    /* body'den stili alsın */
+
     /* box-sizing'i en başta resetlemiştik,
        o yüzden padding genişliği etkilemeyecek. */
 }
 
 .form-group textarea {
-    resize: vertical; /* Sadece dikeyde yeniden boyutlandırılabilsin */
+    resize: vertical;
+    /* Sadece dikeyde yeniden boyutlandırılabilsin */
 }
 
 /* Formdaki "Gönder" butonu. Ana .btn stilimizi kullanacak */
 .contact-form .btn {
-    width: 100%; /* Buton da tam genişlik olsun */
+    width: 100%;
+    /* Buton da tam genişlik olsun */
     font-size: 16px;
     padding: 15px;
+}
+
+/* --- 16. Sepet Sayfası --- */
+.cart-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    /* Diğer sayfalardan farklı bir arka plan */
+}
+
+.cart-layout {
+    display: grid;
+    /* Sol sütun (liste) 2 birim, sağ sütun (özet) 1 birim yer kaplasın */
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+/* Sol Sütun: Ürün Listesi */
+.cart-items-list {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.cart-items-list h2 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+#empty-cart-message {
+    color: #888;
+    font-size: 18px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Sağ Sütun: Sipariş Özeti */
+.cart-summary {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+    /* Sayfa kaydırılsa bile özet kutusu görünsün (isteğe bağlı) */
+    position: sticky;
+    top: 20px;
+}
+
+.cart-summary h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    /* Sağa ve sola yasla */
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.summary-row.total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+/* Ödeme Butonu (Daha önce .btn-add-to-cart için yazdığımız yeşil stili kullansın) */
+.cart-summary .btn-add-to-cart {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* --- 17. Sepet Sayfası - Ürün Satırı --- */
+.cart-item {
+    display: flex;
+    align-items: center; /* Dikeyde ortala */
+    gap: 15px; /* Aralara boşluk */
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee; /* Her ürünün altı çizgili olsun */
+}
+
+/* Sepetteki son ürünün altındaki çizgiyi kaldır */
+.cart-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 100px; /* Resim oranına göre ayarlanabilir */
+    object-fit: cover; /* Resmi 80x100 alana sığdır/kırp */
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.cart-item-info {
+    /* Kalan tüm boşluğu kapla (isim ve sil butonu için) */
+    flex: 1; 
+}
+
+.cart-item-info h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cart-item-info .cart-item-price {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.cart-item-info .remove-item-btn {
+    font-size: 12px;
+    color: #d9534f; /* Kırmızımsı bir renk */
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.cart-item-info .remove-item-btn:hover {
+    text-decoration: underline;
+}
+
+/* --- 18. Mobil Menü (Hamburger) Stilleri --- */
+.menu-toggle {
+    display: none; /* Hamburger menüyü MASAÜSTÜNDE GİZLE */
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    /* İkonun içindeki çubukları (bar) düzenlemek için */
+    /* HATA BURADAYDI: display: flex; satırını buradan kaldırıyoruz */
+    flex-direction: column;
+    gap: 5px; /* Çubuklar arası boşluk */
+    padding: 10px;
+}
+
+.menu-toggle .bar {
+    /* Bu kuralda değişiklik yok */
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+/* @media (max-width: 768px) ... 
+   ... (Aşağıdaki @media kuralı olduğu gibi kalmalı,
+       içindeki .menu-toggle { display: flex; } kuralı DOĞRU) ...
+*/
+
+
+/* =======================================================
+   RESPONSIVE TASARIM (MEDIA QUERY)
+   ======================================================= */
+
+/* Ekran genişliği 768px (tablet) veya daha küçük olduğunda: */
+@media (max-width: 768px) {
+    
+    /* --- 1. Header Düzenlemesi --- */
+    
+    /* Header'daki ana container'ı (logo, ikon, menü) ayarla */
+    header .container {
+        /* Logo ve ikonu (menu-toggle) sağa sola yasla */
+        justify-content: space-between; 
+    }
+    
+    /* Hamburger ikonunu (menu-toggle) MOBİLDE GÖSTER */
+    .menu-toggle {
+        display: flex; /* (display: none; olanı ezer) */
+    }
+    
+    /* Asıl menü sargısını (nav-wrapper) MOBİLDE GİZLE */
+    .nav-wrapper {
+        display: none;
+        
+        /* Aşağıdaki stiller, JS ile menü AÇILDIĞINDA geçerli olacak */
+        position: absolute;
+        top: 80px; /* Header'ın yüksekliğine göre ayarlayın */
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        padding: 20px;
+    }
+    
+    /* Menü açıldığında (JavaScript ile .active sınıfı eklendiğinde) */
+    .nav-wrapper.active {
+        display: block; /* Menüyü görünür yap */
+    }
+    
+    /* Menü linklerini alt alta diz */
+    nav ul li {
+        display: block; /* inline-block olanı ezer */
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    /* Header ikonları (sepet) menünün altına gelsin */
+    .header-icons {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #f4f4f4;
+    }
+    
+    
+    /* --- 2. Diğer Sayfaların Düzenlenmesi --- */
+    
+    /* Ürünler ve İletişim sayfasındaki sütunları alt alta getir */
+    .product-list-section .container,
+    .contact-grid {
+        display: block; /* flex veya grid'i iptal et */
+    }
+    
+    /* Filtreler ve sipariş özeti kutularına boşluk ver */
+    .filters,
+    .cart-summary {
+        margin-bottom: 30px;
+        /* (position: sticky; olanı iptal etmek gerekebilir ama şimdilik kalsın) */
+    }
+
+    /* Ürün detay sayfasındaki sütunları alt alta getir */
+    .product-detail-layout {
+        flex-direction: column; /* flex'i dikey yap */
+    }
+    
+    /* Sepet sayfasındaki sütunları alt alta getir */
+    .cart-layout {
+        grid-template-columns: 1fr; /* 2fr 1fr olanı ezer */
+    }
 }
