@@ -32,9 +32,40 @@ document.addEventListener('DOMContentLoaded', () => {
             // CSS'de ".nav-wrapper.active { display: block; }" kuralı bunu bekliyor
             navWrapper.classList.toggle('active');
         });
-    }
+    // ... (4. Mobil Menü kodu burada biter) ...
+        }
+
+        // 5. ÜRÜN DETAY SAYFASI RESİM GALERİSİ
+        const mainImage = document.querySelector('.main-product-image');
+        const thumbnails = document.querySelectorAll('.thumbnail-images img');
+
+        // Eğer bu elementler sayfada varsa (yani urun-detay.html'deyiz):
+        if (mainImage && thumbnails.length > 0) {
+            
+            // Sayfa yüklendiğinde ilk küçük resmi "aktif" olarak işaretle
+            thumbnails[0].classList.add('active-thumbnail');
+            
+            // Her bir küçük resme (thumbnail) tıklama özelliği ekle
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', () => {
+                    
+                    // 1. Tıklanan küçük resmin 'data-large-src' özelliğinden yeni resim URL'sini al
+                    const newImageSrc = thumbnail.dataset.largeSrc;
+                    
+                    // 2. Ana resmin 'src' özelliğini bu yeni URL ile değiştir
+                    mainImage.src = newImageSrc;
+                    
+                    // 3. (Bonus) Tüm küçük resimlerden 'active' sınıfını kaldır
+                    thumbnails.forEach(t => t.classList.remove('active-thumbnail'));
+                    
+                    // 4. (Bonus) Sadece tıklanan küçük resme 'active' sınıfını ekle
+                    thumbnail.classList.add('active-thumbnail');
+                });
+            });
+        }
+        
+    }); // <-- DOMContentLoaded'in kapanış parantezi (Bunun üstüne ekleyin)
     
-});
 
 
 /* =================================================================

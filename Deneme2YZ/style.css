@@ -919,3 +919,16 @@ nav ul li a.active {
         grid-template-columns: 1fr; /* 2fr 1fr olanı ezer */
     }
 }
+
+/* --- 19. Ürün Galerisi (Aktif Thumbnail) --- */
+.thumbnail-images img {
+    /* Daha önce eklediğimiz stilleri (cursor: pointer vb.) zaten alıyor */
+    /* Geçiş efekti ekleyelim */
+    transition: border-color 0.3s ease;
+}
+
+/* JavaScript tarafından .active-thumbnail sınıfı eklenen resim: */
+.thumbnail-images img.active-thumbnail {
+    border-color: #007bff; /* Ana mavi rengimiz */
+    border-width: 2px; /* Kenarlığı kalınlaştır */
+}
