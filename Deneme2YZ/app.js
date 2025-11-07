@@ -55,10 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     // 2. Ana resmin 'src' özelliğini bu yeni URL ile değiştir
                     mainImage.src = newImageSrc;
                     
-                    // 3. (Bonus) Tüm küçük resimlerden 'active' sınıfını kaldır
+                    // 3. Tüm küçük resimlerden 'active' sınıfını kaldır
                     thumbnails.forEach(t => t.classList.remove('active-thumbnail'));
                     
-                    // 4. (Bonus) Sadece tıklanan küçük resme 'active' sınıfını ekle
+                    // 4. Sadece tıklanan küçük resme 'active' sınıfını ekle
                     thumbnail.classList.add('active-thumbnail');
                 });
             });
