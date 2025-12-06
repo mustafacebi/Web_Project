@@ -49,11 +49,11 @@ header .container {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 32px;
     /* Logonun yazı boyutunu büyütelim */
     font-weight: bold;
     /* Kalın yapalım */
-    color: #555;
+    color: #18259b;
     /* Logonun rengi */
     text-decoration: none;
     /* Altındaki çizgiyi kaldır */
