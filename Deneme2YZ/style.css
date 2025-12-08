@@ -396,4 +396,5 @@ nav ul li a.active::after {
     background-color: var(--bg-white);
     padding: 30px;
     border-radius:
+    var(--radius-lg);
 }
